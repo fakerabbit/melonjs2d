@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#1a9ec3">
+ <tileset firstgid="1" name="area01_level_tiles" tilewidth="32" tileheight="32">
+  <image source="../../../tutorial_data/img/map/area01_level_tiles.png" width="640" height="241"/>
+ </tileset>
+ <layer name="foreground" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DggDYQswKxGJXMk6RQvzgQszAg3ESpeegA3TyYfVoMuMMB3U24zIsF4hgglgBiZiQ5fPpBgAeIeaFskD5QnBQBcSEQFwCxLZJ5MVB7PKD8WCQMk1MAYkUom5kALoDa44bGR8YmUPeAMAAw6gyj
+  </data>
+ </layer>
+ <layer name="background" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2B4AX4qm6dMoX4dINZF4ptTaB41ALqbhgoAAEynARw=
+  </data>
+ </layer>
+</map>
