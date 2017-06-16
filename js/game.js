@@ -28,6 +28,9 @@ var game = {
     // Run on game resources loaded.
     "loaded" : function () {
       // set the "Play/Ingame" Screen Object
+      me.state.set(me.state.MENU, new game.TitleScreen());
+
+      // set the "Play/Ingame" Screen Object
       me.state.set(me.state.PLAY, new game.PlayScreen());
 
       // register our player entity in the object pool
@@ -40,7 +43,7 @@ var game = {
       me.input.bindKey(me.input.KEY.RIGHT, "right");
       me.input.bindKey(me.input.KEY.X,     "jump", true);
 
-      // start the game
-      me.state.change(me.state.PLAY);
+      // display the menu title
+      me.state.change(me.state.MENU);
     }
 };
