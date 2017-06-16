@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#1a9ec3">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#24aeba">
  <tileset firstgid="1" name="area01_level_tiles" tilewidth="32" tileheight="32">
-  <image source="../../../tutorial_data/img/map/area01_level_tiles.png" width="640" height="241"/>
+  <image source="img/map/area01_level_tiles.png" width="640" height="241"/>
  </tileset>
  <layer name="foreground" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2DggDYQswKxGJXMk6RQvzgQszAg3ESpeegA3TyYfVoMuMMB3U24zIsF4hgglgBiZiQ5fPpBgAeIeaFskD5QnBQBcSEQFwCxLZJ5MVB7PKD8WCQMk1MAYkUom5kALoDa44bGR8YmUPeAMAAw6gyj
+   eJy90ssKgkAUxvEBuy1qa3eobRcr6AmSHqD7RpfdaKPtur17f3CEYUjLsA78mJmP4xkULSFEDwU00JT7vkhWE9jKamGIEQYJZ0XNn0p2CvN+WTPMscASO8UKa2winu0iC1PJtnLd46D1H+V6iphnoKplF1xxi3DHI8G8pJURwTumNe/bu+Oyf1RZuduM6Sui9GaWCwcVEXzP8OzIvatkLbS1LOzriOAf9OEhh7xy9uTeV7IxzloW9hmaGuov8k89Afe9HB0=
   </data>
  </layer>
  <layer name="background" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2B4AX4qm6dMoX4dINZF4ptTaB41ALqbhgoAAEynARw=
+   eJxjYBgFo4B+QByJLUYlM3WAWBfK5kBiE2M3IffwAbEjkXbjE4MBJSBWxmMeqcAMiM2paN5gBwA8dALJ
   </data>
  </layer>
+ <objectgroup name="Object Layer 1">
+  <object name="mainPlayer" x="309" y="75" width="32" height="64">
+   <properties>
+    <property name="framewidth" value="64"/>
+    <property name="image" value="gripe_run_right"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="collision">
+  <object x="-2" y="170" width="63" height="157"/>
+  <object x="127" y="355" width="66" height="63"/>
+  <object x="0" y="420" width="129" height="58"/>
+  <object x="194" y="419" width="447" height="62"/>
+  <object x="257" y="290" width="64" height="61"/>
+  <object x="418" y="288" width="60" height="62"/>
+  <object x="543" y="225" width="63" height="62"/>
+  <object x="160" y="194" width="319" height="21"/>
+ </objectgroup>
 </map>
