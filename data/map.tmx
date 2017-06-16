@@ -1,34 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" backgroundcolor="#24aeba">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="area01_level_tiles" tilewidth="32" tileheight="32">
   <image source="img/map/area01_level_tiles.png" width="640" height="241"/>
  </tileset>
- <layer name="foreground" width="20" height="15">
-  <data encoding="base64" compression="zlib">
-   eJy90ssKgkAUxvEBuy1qa3eobRcr6AmSHqD7RpfdaKPtur17f3CEYUjLsA78mJmP4xkULSFEDwU00JT7vkhWE9jKamGIEQYJZ0XNn0p2CvN+WTPMscASO8UKa2winu0iC1PJtnLd46D1H+V6iphnoKplF1xxi3DHI8G8pJURwTumNe/bu+Oyf1RZuduM6Sui9GaWCwcVEXzP8OzIvatkLbS1LOzriOAf9OEhh7xy9uTeV7IxzloW9hmaGuov8k89Afe9HB0=
-  </data>
- </layer>
+ <imagelayer name="Parallax_layer1">
+  <image source="img/area01_bkg0.png"/>
+  <properties>
+   <property name="ratio" value="0.25"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="Parallax_layer2">
+  <image source="img/area01_bkg1.png"/>
+  <properties>
+   <property name="ratio" value="0.35"/>
+  </properties>
+ </imagelayer>
  <layer name="background" width="20" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo4B+QByJLUYlM3WAWBfK5kBiE2M3IffwAbEjkXbjE4MBJSBWxmMeqcAMiM2paN5gBwA8dALJ
+   eJxjYBgFAwl0gFh3oB1BRyCOxBajkpnIYcjBgDs8sdlNyD18QOxIpN34xGBACYiV8ZhHKjADYnMqmjfYAQBXfwMi
   </data>
  </layer>
- <objectgroup name="Object Layer 1">
-  <object name="mainPlayer" x="309" y="75" width="32" height="64">
+ <objectgroup color="#1713fb" name="Entities">
+  <object name="mainPlayer" x="12" y="92" width="32" height="64">
    <properties>
     <property name="framewidth" value="64"/>
     <property name="image" value="gripe_run_right"/>
    </properties>
   </object>
+  <object name="CoinEntity" x="198" y="119" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="279" y="119" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="346" y="119" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="410" y="119" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="528" y="50" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="603" y="103" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="558" y="172" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
  </objectgroup>
+ <objectgroup color="#eefd10" name="CoinEntity">
+  <object name="CoinEntity" x="198" y="119" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="279" y="119" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="346" y="119" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="410" y="119" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="528" y="50" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="603" y="103" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object name="CoinEntity" x="558" y="172" width="32" height="32">
+   <properties>
+    <property name="framewidth" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#a21015" name="EnemyEntity">
+  <object name="EnemyEntity" x="197" y="385" width="442" height="32"/>
+ </objectgroup>
+ <layer name="foreground" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyt0skKwjAUheEUrbrQrbOgW60T+ASKD+C8aZdOuGndOb27P5hACK226oWPJLfpaQnpCSEc5FBHQ867IlmNMdHGHgYYop8wKyp/Kk3+kKfXDHMssMROs8IaG5SQho3im7wtLOxxkHPlKMdTxLudkPwLrriFuEsPI0f9awoV45kVk1lORF7SUmco/pT37bftkN4vlUu4P+59yqPwIcuDi7J4nadau3Luab0mWkZP7WuL1x0M4CODrLb25TzQeiOcjZ7alzJUUQvpx/UE6+wctw==
+  </data>
+ </layer>
  <objectgroup name="collision">
-  <object x="-2" y="170" width="63" height="157"/>
+  <object x="-2" y="170" width="63" height="119"/>
   <object x="127" y="355" width="66" height="63"/>
   <object x="0" y="420" width="129" height="58"/>
   <object x="194" y="419" width="447" height="62"/>
-  <object x="257" y="290" width="64" height="61"/>
-  <object x="418" y="288" width="60" height="62"/>
-  <object x="543" y="225" width="63" height="62"/>
-  <object x="160" y="194" width="319" height="21"/>
+  <object x="257" y="290" width="64" height="30"/>
+  <object x="418" y="288" width="60" height="32"/>
+  <object x="543" y="225" width="64" height="31"/>
+  <object x="159" y="159" width="319" height="12"/>
+  <object x="613" y="167" width="29" height="41"/>
+  <object x="512" y="108" width="63" height="18"/>
+  <object x="353" y="293" width="31" height="24"/>
  </objectgroup>
 </map>
